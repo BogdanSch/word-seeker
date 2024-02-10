@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Seeker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./images/favicon/site.webmanifest">
+</head>
+
+<body>
+    <div class="wrapper">
+        <main class="main">
+            <section class="hero">
+                <div class="container">
+                    <div class="hero__wrap text-center text-light">
+                        <h1>The Word Seeker</h1>
+                        <p>
+                            "Word Seeker" is a word guessing game where players guess letters to complete a hidden
+                            word. Guess
+                            wrong, and you'll start drawing a car figure! Guess right, and you'll reveal more of the
+                            word. Can you guess the word before the car is complete? Test your vocabulary and
+                            deduction skills
+                            in Word Seeker!</p>
+                    </div>
+                </div>
+            </section>
+            <section class="game">
+                <div class="container">
+                    <div class="game__wrap">
+                        <div class="text-center mt-4">
+                            <div id="gameControls">
+                                <h2 class="mt-5 mb-3">The game has begun!</h2>
+                                <input type="text" id="guessInput" class="form-control mb-3"
+                                    placeholder="Enter a letter">
+                                <button id="guessButton" class="btn btn-outline-primary">Guess</button>
+                            </div>
+                            <div id="gamePlayControls" class="mt-5">
+                                <h2 class="mb-4">Press play to start the game!</h2>
+                                <button id="playButton" class="btn btn-outline-success">Play</button>
+                            </div>
+                        </div>
+                        <div class="text-center mt-4 mb-4">
+                            <canvas id="gameCanvas" width="400" height="400"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script type="module" src="./js/script.js"></script>
+</body>
+
+</html>
